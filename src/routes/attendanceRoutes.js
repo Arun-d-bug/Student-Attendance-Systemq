@@ -18,3 +18,4 @@ router.delete('/reset', attendanceController.resetAttendance);
 router.get('/student/:roll', attendanceController.getStudentHistory);
 
 module.exports = router;
+

@@ -9,3 +9,4 @@ router.get('/dashboard', analyticsController.getDashboard);
 router.get('/trends', analyticsController.getTrends);
 
 module.exports = router;
+

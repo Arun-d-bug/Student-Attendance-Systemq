@@ -72,3 +72,4 @@ class AttendanceController {
 }
 
 module.exports = new AttendanceController();
+

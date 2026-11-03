@@ -36,3 +36,4 @@ class ClassController {
 }
 
 module.exports = new ClassController();
+

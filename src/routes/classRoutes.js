@@ -9,3 +9,4 @@ router.get('/', classController.getAll);
 router.get('/:classId', classController.getById);
 
 module.exports = router;
+

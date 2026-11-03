@@ -12,3 +12,4 @@ router.get('/:roll', studentController.getByRoll);
 router.post('/', studentController.create);
 
 module.exports = router;
+

@@ -164,3 +164,4 @@ class DatabaseStore {
 const db = new DatabaseStore();
 
 module.exports = db;
+

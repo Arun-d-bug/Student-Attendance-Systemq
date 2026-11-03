@@ -50,7 +50,7 @@ function mockRequest(method, urlStr, bodyData = null) {
     function finish() {
       let parsed = responseBody;
       if (headers['content-type'] && headers['content-type'].includes('application/json')) {
-        try { parsed = JSON.parse(responseBody); } catch (_) {}
+        try { parsed = JSON.parse(responseBody); } catch (_) { }
       }
       resolve({ status: res.statusCode, headers, body: parsed });
     }
