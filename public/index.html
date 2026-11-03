@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#f5f7fb" />
+<title>AttendEase — Student Attendance System</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f8fafc;
+  --surface:#ffffff;
+  --ink:#0f172a;
+  --muted:#64748b;
+  --line:#e2e8f0;
+  --primary:#4f46e5;
+  --primary-dark:#4338ca;
+  --primary-light:#eef2ff;
+  --green:#10b981;
+  --green-dark:#047857;
+  --green-bg:#ecfdf5;
+  --red:#ef4444;
+  --red-dark:#b91c1c;
+  --red-bg:#fef2f2;
+  --amber:#f59e0b;
+  --amber-dark:#b45309;
+  --amber-bg:#fffbeb;
+  --shadow-sm:0 1px 3px rgba(15,23,42,0.06);
+  --shadow:0 10px 30px -10px rgba(15,23,42,0.08), 0 4px 6px -2px rgba(15,23,42,0.03);
+  --shadow-lg:0 20px 35px -10px rgba(15,23,42,0.12);
+  --radius:14px;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font:15px/1.5 'Plus Jakarta Sans',Inter,-apple-system,BlinkMacSystemFont,sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+button,input,select{font:inherit}
+button{cursor:pointer}
+.app{min-height:100vh;display:flex;flex-direction:column}
+.topbar{
+  height:72px;
+  background:#fff;
+  border-bottom:1px solid var(--line);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 max(24px,calc((100% - 1180px)/2));
+  gap:16px;
+  position:sticky;
+  top:0;
+  z-index:40;
+}
+.brand{display:flex;align-items:center;gap:11px;font-weight:800;font-size:20px;letter-spacing:-.5px}
+.brand-icon{
+  width:38px;
+  height:38px;
+  border-radius:11px;
+  background:linear-gradient(135deg,var(--primary),#6366f1);
+  color:white;
+  display:grid;
+  place-items:center;
+  font-weight:900;
+  box-shadow:0 4px 12px rgba(79,70,229,.3);
+}
+.brand span:last-child{color:var(--primary)}
+.backend-status{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  font-size:12px;
+  font-weight:600;
+  padding:4px 10px;
+  border-radius:20px;
+  background:#f1f5f9;
+  color:var(--muted);
+  border:1px solid var(--line);
+}
+.backend-status.online{background:var(--green-bg);color:var(--green-dark);border-color:#bbf7d0}
+.backend-status.online .status-dot{background:var(--green)}
+.status-dot{width:7px;height:7px;border-radius:50%;background:#94a3b8}
+
+.top-right{display:flex;align-items:center;gap:12px}
+.role-select{
+  border:1px solid var(--line);
+  background:#fff;
+  border-radius:10px;
+  padding:9px 12px;
+  color:var(--ink);
+  font-weight:600;
+  font-size:13px;
+  cursor:pointer;
+  transition:.15s;
+}
+.role-select:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 3px rgba(79,70,229,.1)}
+.avatar{
+  width:38px;
+  height:38px;
+  border-radius:50%;
+  background:var(--primary-light);
+  color:var(--primary);
+  display:grid;
+  place-items:center;
+  font-weight:800;
+  font-size:13px;
+  border:2px solid #fff;
+  box-shadow:var(--shadow-sm);
+}
+
+.wrap{max-width:1180px;margin:0 auto;padding:32px 24px 60px;width:100%;flex:1}
+.welcome{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;margin-bottom:25px}
+.eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:1.1px;font-weight:800;color:var(--primary)}
+h1{font-size:30px;letter-spacing:-1px;margin:5px 0 4px;font-weight:800}
+.sub{color:var(--muted);margin:0;font-size:14px}
+.date-pill{
+  background:#fff;
+  border:1px solid var(--line);
+  padding:10px 16px;
+  border-radius:10px;
+  color:var(--muted);
+  font-size:13px;
+  font-weight:600;
+  white-space:nowrap;
+  box-shadow:var(--shadow-sm);
+}
+
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:22px}
+.stat,.panel,.notice{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+.stat{padding:20px}
+.stat-head{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:13px;font-weight:600}
+.stat-icon{
+  width:36px;
+  height:36px;
+  border-radius:10px;
+  background:var(--primary-light);
+  color:var(--primary);
+  display:grid;
+  place-items:center;
+  font-size:17px;
+  font-weight:700;
+}
+.stat strong{display:block;font-size:30px;letter-spacing:-1px;margin:12px 0 2px;font-weight:800}
+.stat small{color:var(--muted);font-size:12px;font-weight:500}
+
+.layout{display:grid;grid-template-columns:minmax(0,1.75fr) minmax(300px,1.1fr);gap:20px}
+.panel{padding:24px;margin-bottom:20px}
+.panel-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:20px}
+.panel h2{font-size:18px;letter-spacing:-.4px;margin:0;font-weight:700}
+.panel-desc{font-size:13px;color:var(--muted);margin:4px 0 0}
+
+.btn{
+  border:0;
+  border-radius:10px;
+  padding:10px 16px;
+  background:var(--primary);
+  color:#fff;
+  font-weight:700;
+  font-size:13px;
+  transition:all .18s;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:7px;
+}
+.btn:hover{background:var(--primary-dark);transform:translateY(-1px);box-shadow:0 4px 12px rgba(79,70,229,.25)}
+.btn:active{transform:translateY(0)}
+.btn.secondary{background:var(--primary-light);color:var(--primary)}
+.btn.secondary:hover{background:#e0e7ff;box-shadow:none}
+.btn.outline{background:#fff;border:1px solid var(--line);color:var(--ink)}
+.btn.outline:hover{background:#f8fafc;border-color:#cbd5e1;box-shadow:var(--shadow-sm)}
+.btn.danger-outline{background:#fff;border:1px solid #fecaca;color:var(--red)}
+.btn.danger-outline:hover{background:var(--red-bg)}
+.btn.small{padding:7px 11px;font-size:12px;border-radius:8px}
+
+.toolbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.field{
+  border:1px solid var(--line);
+  background:#fff;
+  border-radius:10px;
+  padding:9px 12px;
+  color:var(--ink);
+  font-size:13px;
+  font-weight:500;
+  outline:none;
+  transition:.15s;
+}
+.field:focus{border-color:var(--primary);box-shadow:0 0 0 3px rgba(79,70,229,.15)}
+
+.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px}
+table{width:100%;border-collapse:collapse;min-width:540px}
+th{
+  text-align:left;
+  background:#f8fafc;
+  color:var(--muted);
+  font-size:11px;
+  text-transform:uppercase;
+  letter-spacing:.7px;
+  font-weight:700;
+  padding:12px 14px;
+  border-bottom:1px solid var(--line);
+}
+td{padding:14px 14px;border-bottom:1px solid #f1f5f9;font-size:13px}
+tr:last-child td{border-bottom:0}
+tr:hover td{background:#fafafa}
+
+.student{display:flex;align-items:center;gap:11px;font-weight:700}
+.initial{
+  width:34px;
+  height:34px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  background:var(--primary-light);
+  color:var(--primary);
+  font-size:11px;
+  font-weight:800;
+  flex:0 0 34px;
+}
+.muted{color:var(--muted)}
+.badge{
+  display:inline-flex;
+  align-items:center;
+  gap:5px;
+  padding:5px 10px;
+  border-radius:20px;
+  font-size:11px;
+  font-weight:700;
+}
+.badge.good{background:var(--green-bg);color:var(--green-dark);border:1px solid #bbf7d0}
+.badge.low{background:var(--red-bg);color:var(--red-dark);border:1px solid #fecaca}
+.badge.warn{background:var(--amber-bg);color:var(--amber-dark);border:1px solid #fde68a}
+
+.attendance-actions{display:flex;gap:6px}
+.mark{
+  border:1px solid var(--line);
+  background:#fff;
+  border-radius:8px;
+  padding:7px 12px;
+  font-size:12px;
+  font-weight:700;
+  color:var(--muted);
+  transition:all .15s;
+}
+.mark:hover{border-color:#cbd5e1;color:var(--ink)}
+.mark.active-present{
+  background:var(--green-bg);
+  border-color:#86efac;
+  color:var(--green-dark);
+  box-shadow:0 2px 4px rgba(16,185,129,.12);
+}
+.mark.active-absent{
+  background:var(--red-bg);
+  border-color:#fca5a5;
+  color:var(--red-dark);
+  box-shadow:0 2px 4px rgba(239,68,68,.12);
+}
+
+.notice{
+  padding:18px;
+  margin-bottom:20px;
+  display:flex;
+  gap:14px;
+  align-items:flex-start;
+  border-color:#fed7aa;
+  background:#fffaf0;
+}
+.notice-icon{
+  width:36px;
+  height:36px;
+  flex:0 0 36px;
+  border-radius:10px;
+  background:#ffedd5;
+  color:#c2410c;
+  display:grid;
+  place-items:center;
+  font-weight:800;
+  font-size:16px;
+}
+.notice strong{display:block;font-size:14px;color:#9a3412}
+.notice p{margin:3px 0 0;color:#c2410c;font-size:13px}
+
+.progress-row{display:flex;justify-content:space-between;align-items:center;font-size:13px;margin:16px 0 8px;font-weight:600}
+.progress{height:9px;background:#e2e8f0;border-radius:10px;overflow:hidden}
+.progress span{height:100%;display:block;background:var(--green);border-radius:10px;transition:width .4s ease}
+.progress span.lowbar{background:var(--red)}
+
+.mini-list{display:grid;gap:14px}
+.mini-item{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.mini-item .student{font-size:13px}
+.mini-item .initial{width:30px;height:30px;font-size:10px}
+.empty{padding:28px;text-align:center;color:var(--muted);font-size:13px}
+.hidden{display:none!important}
+
+.student-hero{
+  display:flex;
+  align-items:center;
+  gap:16px;
+  padding:20px;
+  border-radius:14px;
+  background:linear-gradient(135deg,#f8faff,#eef2ff);
+  border:1px solid #e0e7ff;
+  margin-bottom:20px;
+}
+.big-avatar{
+  width:58px;
+  height:58px;
+  border-radius:16px;
+  background:var(--primary);
+  color:#fff;
+  display:grid;
+  place-items:center;
+  font-weight:900;
+  font-size:20px;
+  box-shadow:0 8px 16px rgba(79,70,229,.25);
+  flex:0 0 58px;
+}
+.student-hero h3{margin:0;font-size:18px;font-weight:800}
+.student-hero p{margin:4px 0 0;color:var(--muted);font-size:13px;font-weight:500}
+.percentage{font-size:32px;font-weight:800;letter-spacing:-1px}
+
+/* Recovery Calculator Card */
+.advice-card{
+  padding:16px;
+  border-radius:12px;
+  margin-top:16px;
+  font-size:13px;
+  display:flex;
+  gap:12px;
+  align-items:center;
+}
+.advice-card.good{background:var(--green-bg);border:1px solid #bbf7d0;color:var(--green-dark)}
+.advice-card.warn{background:var(--red-bg);border:1px solid #fecaca;color:var(--red-dark)}
+
+/* Modal / Cover Page Overlay */
+.modal-overlay{
+  position:fixed;
+  inset:0;
+  background:rgba(15,23,42,.6);
+  backdrop-filter:blur(4px);
+  display:grid;
+  place-items:center;
+  padding:20px;
+  z-index:999;
+}
+.modal{
+  background:#fff;
+  border-radius:18px;
+  max-width:700px;
+  width:100%;
+  max-height:90vh;
+  overflow-y:auto;
+  box-shadow:var(--shadow-lg);
+  padding:32px;
+  border:1px solid var(--line);
+}
+.cover-sheet{
+  border:2px dashed #cbd5e1;
+  border-radius:14px;
+  padding:28px;
+  background:#f8fafc;
+  margin:20px 0;
+}
+.cover-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px;
+  margin-top:16px;
+}
+.cover-cell{background:#fff;padding:12px 14px;border-radius:10px;border:1px solid var(--line)}
+.cover-cell label{display:block;font-size:11px;text-transform:uppercase;color:var(--muted);font-weight:700;margin-bottom:4px}
+.cover-cell strong{display:block;font-size:14px;color:var(--ink)}
+
+.footer{
+  text-align:center;
+  color:#94a3b8;
+  font-size:13px;
+  padding:24px;
+  border-top:1px solid var(--line);
+  background:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:16px;
+  flex-wrap:wrap;
+}
+.footer a{color:var(--primary);text-decoration:none;font-weight:600}
+.footer a:hover{text-decoration:underline}
+
+.toast{
+  position:fixed;
+  right:24px;
+  bottom:24px;
+  background:#0f172a;
+  color:#fff;
+  padding:14px 20px;
+  border-radius:12px;
+  box-shadow:var(--shadow-lg);
+  font-size:14px;
+  font-weight:600;
+  opacity:0;
+  transform:translateY(12px);
+  transition:all .22s cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events:none;
+  z-index:9999;
+  display:flex;
+  align-items:center;
+  gap:9px;
+}
+.toast.show{opacity:1;transform:translateY(0)}
+
+@media(max-width:960px){
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .layout{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+  .topbar{height:64px;padding:0 16px}
+  .wrap{padding:20px 16px 40px}
+  .welcome{align-items:flex-start;flex-direction:column}
+  .date-pill{white-space:normal}
+  h1{font-size:26px}
+  .stats{gap:10px}
+  .stat{padding:16px}
+  .stat strong{font-size:24px}
+  .panel{padding:18px}
+  .panel-head{align-items:flex-start;flex-direction:column}
+  .top-right{gap:8px}
+  .cover-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<div class="app">
+<header class="topbar">
+  <div style="display:flex;align-items:center;gap:14px">
+    <div class="brand">
+      <div class="brand-icon">A</div>
+      <div>Attend<span>Ease</span></div>
+    </div>
+    <div class="backend-status online" id="backendStatus" title="REST API Online">
+      <span class="status-dot"></span>
+      <span id="backendStatusText">Live Backend</span>
+    </div>
+  </div>
+
+  <div class="top-right">
+    <button class="btn outline small" id="coverPageBtn" title="View Project Submission Cover">
+      📄 Cover Page
+    </button>
+    <label class="muted" for="roleSelect" style="font-size:12px;font-weight:600">View as</label>
+    <select class="role-select" id="roleSelect" aria-label="Choose portal role">
+      <option value="teacher">Teacher dashboard</option>
+      <option value="student">Student dashboard</option>
+    </select>
+    <div class="avatar" id="topAvatar">YM</div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="welcome">
+    <div>
+      <div class="eyebrow" id="eyebrowText">Academic Session 2026-27 · Real-Time Backend</div>
+      <h1 id="pageTitle">Good afternoon, Yash</h1>
+      <p class="sub" id="pageSubtitle">Manage your class attendance and keep track of student progress.</p>
+    </div>
+    <div class="date-pill" id="todayDate"></div>
+  </section>
+
+  <!-- TEACHER VIEW -->
+  <section id="teacherView">
+    <div class="stats">
+      <article class="stat">
+        <div class="stat-head">Total students <span class="stat-icon">👥</span></div>
+        <strong id="totalStudents">8</strong>
+        <small id="classSubtitle">Enrolled in B.Tech CSE AI</small>
+      </article>
+      <article class="stat">
+        <div class="stat-head">Present today <span class="stat-icon" style="color:var(--green)">✓</span></div>
+        <strong id="presentCount">0</strong>
+        <small>Marked present for today</small>
+      </article>
+      <article class="stat">
+        <div class="stat-head">Absent today <span class="stat-icon" style="color:var(--red)">✕</span></div>
+        <strong id="absentCount">0</strong>
+        <small>Marked absent for today</small>
+      </article>
+      <article class="stat">
+        <div class="stat-head">Below 75% <span class="stat-icon" style="color:var(--amber)">⚠️</span></div>
+        <strong id="lowCount" style="color:var(--red)">2</strong>
+        <small>Students need attention</small>
+      </article>
+    </div>
+
+    <!-- Alert Box: Feature 4 Requirement -->
+    <div id="alertBox" class="notice">
+      <div class="notice-icon">⚠️</div>
+      <div>
+        <strong>Statutory Attendance Alert (&lt; 75%)</strong>
+        <p id="alertText">2 students are currently below the required 75% attendance threshold.</p>
+      </div>
+    </div>
+
+    <div class="layout">
+      <!-- Attendance Marking Panel: Feature 1 Requirement -->
+      <section class="panel">
+        <div class="panel-head">
+          <div>
+            <h2>Mark daily attendance</h2>
+            <p class="panel-desc">Select class and date, mark attendance, and save to database.</p>
+          </div>
+          <div class="toolbar">
+            <select class="field" id="classSelect" aria-label="Select class">
+              <!-- Populated via API -->
+            </select>
+            <input class="field" type="date" id="attendanceDate" aria-label="Attendance date">
+          </div>
+        </div>
+
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;flex-wrap:wrap;gap:8px">
+          <div class="toolbar">
+            <button class="btn secondary small" id="markAllPresentBtn">✓ All Present</button>
+            <button class="btn secondary small" id="markAllAbsentBtn">✕ All Absent</button>
+          </div>
+          <button class="btn outline small" id="exportCsvBtn">📥 Export CSV Sheet</button>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Student</th>
+                <th>Roll number</th>
+                <th>Attendance</th>
+                <th>Mark status</th>
+              </tr>
+            </thead>
+            <tbody id="attendanceRows">
+              <!-- Populated dynamically via backend API -->
+            </tbody>
+          </table>
+        </div>
+
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-top:18px;flex-wrap:wrap;gap:10px">
+          <span class="muted" style="font-size:12px" id="lastSavedIndicator">Changes pending save</span>
+          <div style="display:flex;gap:10px">
+            <button class="btn outline" id="resetBtn">Reset date</button>
+            <button class="btn" id="saveBtn">💾 Save attendance</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sidebar: Feature 3 & 4 Requirements -->
+      <aside>
+        <!-- At Risk List -->
+        <section class="panel">
+          <div class="panel-head">
+            <div>
+              <h2>Students below 75%</h2>
+              <p class="panel-desc">Students at risk of exam debarment.</p>
+            </div>
+            <span class="badge low" id="lowBadge">2 at risk</span>
+          </div>
+          <div class="mini-list" id="lowStudents">
+            <!-- Populated via backend API -->
+          </div>
+        </section>
+
+        <!-- Class Overview -->
+        <section class="panel">
+          <h2>Class attendance overview</h2>
+          <p class="panel-desc">Calculated across all historical academic days.</p>
+          <div class="progress-row">
+            <span>Class average</span>
+            <strong id="classAverage">78%</strong>
+          </div>
+          <div class="progress">
+            <span id="classAverageBar" style="width:78%"></span>
+          </div>
+          <p class="panel-desc" style="margin-top:14px">
+            Attendance rate is computed dynamically from attendance records saved in the backend database.
+          </p>
+        </section>
+      </aside>
+    </div>
+  </section>
+
+  <!-- STUDENT VIEW: Feature 2 Requirement -->
+  <section id="studentView" class="hidden">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;flex-wrap:wrap;gap:12px">
+      <div style="display:flex;align-items:center;gap:10px">
+        <label for="studentSelect" style="font-size:13px;font-weight:700">Select Student:</label>
+        <select class="field" id="studentSelect" style="font-weight:600">
+          <!-- Populated from backend students -->
+        </select>
+      </div>
+      <span class="badge good" id="myStatus">On track</span>
+    </div>
+
+    <div class="stats">
+      <article class="stat">
+        <div class="stat-head">My attendance <span class="stat-icon">％</span></div>
+        <strong class="percentage" id="myPercentage">82%</strong>
+        <small>Overall attendance rate</small>
+      </article>
+      <article class="stat">
+        <div class="stat-head">Days present <span class="stat-icon" style="color:var(--green)">✓</span></div>
+        <strong id="myPresent">18</strong>
+        <small>Recorded present days</small>
+      </article>
+      <article class="stat">
+        <div class="stat-head">Days absent <span class="stat-icon" style="color:var(--red)">✕</span></div>
+        <strong id="myAbsent">4</strong>
+        <small>Recorded absent days</small>
+      </article>
+      <article class="stat">
+        <div class="stat-head">Working days <span class="stat-icon">📅</span></div>
+        <strong id="myWorking">22</strong>
+        <small>Total recorded academic days</small>
+      </article>
+    </div>
+
+    <section class="panel">
+      <div class="student-hero">
+        <div class="big-avatar" id="studentBigAvatar">AC</div>
+        <div>
+          <h3 id="studentHeroName">Arunkumar Chaudhary</h3>
+          <p id="studentHeroSub">Student · B.Tech CSE AI · Semester 1 · Roll no. 22CA001</p>
+        </div>
+      </div>
+
+      <div class="panel-head">
+        <div>
+          <h2>My attendance progress</h2>
+          <p class="panel-desc">Minimum required attendance: 75% as per academic guidelines.</p>
+        </div>
+        <strong id="myPercentLabel" style="font-size:18px">82%</strong>
+      </div>
+      <div class="progress">
+        <span id="myBar" style="width:82%"></span>
+      </div>
+
+      <!-- Live Advice & Recovery Calculator -->
+      <div id="studentAdviceBox" class="advice-card good">
+        <span style="font-size:18px">💡</span>
+        <span id="studentAdviceText">Great job! You have maintained healthy attendance.</span>
+      </div>
+    </section>
+
+    <!-- Student Attendance History Log -->
+    <section class="panel">
+      <div class="panel-head">
+        <div>
+          <h2>Recent attendance history</h2>
+          <p class="panel-desc">Complete record of classes marked by faculty.</p>
+        </div>
+        <span class="muted" style="font-size:12px" id="totalHistoryCount">22 records</span>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Course / Subject</th>
+              <th>Status</th>
+              <th>Recorded By</th>
+            </tr>
+          </thead>
+          <tbody id="studentHistory">
+            <!-- Populated via API -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </section>
+</main>
+
+<!-- ASSIGNMENT SUBMISSION COVER MODAL (Matches uploaded screenshot requirements) -->
+<div id="coverModal" class="modal-overlay hidden">
+  <div class="modal">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px">
+      <div style="font-weight:800;font-size:18px">📋 Assignment Cover Page</div>
+      <button class="btn outline small" id="closeCoverModal">✕ Close</button>
+    </div>
+    <p class="panel-desc">Topic 6 Coding Project 12 · Student Directory Submission</p>
+
+    <div class="cover-sheet" id="printableCoverSheet">
+      <div style="text-align:center;margin-bottom:18px">
+        <span class="eyebrow" style="background:#eef2ff;padding:4px 10px;border-radius:6px">NextWave AI · Academic Year 2026-27</span>
+        <h2 style="margin:10px 0 4px;font-size:22px">Student Attendance System</h2>
+        <p class="muted" style="margin:0;font-size:13px">Topic 6 Coding Project 12 · Student Directory</p>
+      </div>
+
+      <div class="cover-grid">
+        <div class="cover-cell">
+          <label>Assignment Title</label>
+          <strong>Student Attendance System</strong>
+        </div>
+        <div class="cover-cell">
+          <label>Subject / Module Name</label>
+          <strong>Introduction to Generative AI</strong>
+        </div>
+        <div class="cover-cell">
+          <label>Student Name</label>
+          <strong>Arunkumar Chaudhary</strong>
+        </div>
+        <div class="cover-cell">
+          <label>Roll Number</label>
+          <strong>22CA001</strong>
+        </div>
+        <div class="cover-cell">
+          <label>Course / Program</label>
+          <strong>B.Tech CSE AI</strong>
+        </div>
+        <div class="cover-cell">
+          <label>Semester</label>
+          <strong>1st Semester</strong>
+        </div>
+        <div class="cover-cell">
+          <label>Faculty / Guide Name</label>
+          <strong>Yash More</strong>
+        </div>
+        <div class="cover-cell">
+          <label>Backend Architecture</label>
+          <strong>Node.js / Express REST API (ACID Store)</strong>
+        </div>
+      </div>
+
+      <div style="margin-top:20px;padding:14px;background:#fff;border-radius:10px;border:1px solid var(--line)">
+        <label style="font-size:11px;text-transform:uppercase;color:var(--muted);font-weight:700">Must-Have Features Implementation Checklist</label>
+        <div style="display:grid;gap:8px;margin-top:8px;font-size:13px">
+          <div>✅ <strong>Feature 1:</strong> Teacher/Admin - Mark Attendance (Single & Batch)</div>
+          <div>✅ <strong>Feature 2:</strong> Student - View Personal Attendance & History</div>
+          <div>✅ <strong>Feature 3:</strong> Calculate Class-wise Percentage Dynamically</div>
+          <div>✅ <strong>Feature 4:</strong> Statutory Alert for Students &lt; 75% Attendance</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="display:flex;justify-content:flex-end;gap:10px">
+      <button class="btn outline" onclick="window.print()">🖨️ Print / Save as PDF</button>
+      <button class="btn" id="doneCoverModal">Done</button>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div><strong>AttendEase</strong> · Production-Grade Student Attendance System</div>
+  <div>Student: <strong>Arunkumar Chaudhary (22CA001)</strong></div>
+  <div>Guide: <strong>Yash More</strong></div>
+  <div><a href="/api/health" target="_blank">API Health</a> · <a href="/api/classes" target="_blank">Classes JSON</a> · <a href="/api/reports/assignment-cover" target="_blank">Cover Metadata</a></div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+</div>
+
+<script>
+// ==========================================
+// FRONTEND REST API CLIENT & INTERACTION CONTROLLER
+// ==========================================
+const API_BASE = '/api';
+const $ = id => document.getElementById(id);
+
+let state = {
+  currentRole: 'teacher',
+  currentClassId: 'cse-ai-sem1',
+  currentDate: new Date().toISOString().slice(0, 10),
+  classes: [],
+  students: [],
+  currentAttendanceRows: [],
+  marksState: {}, // roll -> 'present' | 'absent'
+  currentStudentRoll: '22CA001'
+};
+
+function toast(message, isError = false) {
+  const el = $('toast');
+  el.textContent = message;
+  el.style.background = isError ? '#dc2626' : '#0f172a';
+  el.classList.add('show');
+  setTimeout(() => el.classList.remove('show'), 2800);
+}
+
+function initials(name) {
+  return (name || '').split(' ').slice(0, 2).map(x => x[0]).join('').toUpperCase();
+}
+
+// ------------------------------------------
+// API FETCH HELPERS
+// ------------------------------------------
+async function fetchAPI(endpoint, options = {}) {
+  try {
+    const res = await fetch(`${API_BASE}${endpoint}`, {
+      headers: { 'Content-Type': 'application/json', ...(options.headers || {}) },
+      ...options
+    });
+    if (!res.ok) {
+      const errBody = await res.json().catch(() => ({}));
+      throw new Error(errBody.error || `HTTP error ${res.status}`);
+    }
+    return await res.json();
+  } catch (err) {
+    console.error(`API Error on ${endpoint}:`, err);
+    $('backendStatus').className = 'backend-status';
+    $('backendStatusText').textContent = 'API Connection Error';
+    throw err;
+  }
+}
+
+// ------------------------------------------
+// INITIALIZATION
+// ------------------------------------------
+async function initApp() {
+  const today = new Date();
+  $('todayDate').textContent = today.toLocaleDateString('en-IN', {
+    weekday: 'long',
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric'
+  });
+  $('attendanceDate').value = state.currentDate;
+
+  try {
+    // 1. Fetch available classes
+    const classesRes = await fetchAPI('/classes');
+    state.classes = classesRes.data;
+    renderClassSelect();
+
+    // 2. Fetch initial dashboard data
+    await loadClassAttendance();
+    await loadDashboardSummary();
+
+    // 3. Populate student selector for Student Dashboard
+    await populateStudentSelector();
+
+    $('backendStatus').className = 'backend-status online';
+    $('backendStatusText').textContent = 'Live Backend';
+  } catch (err) {
+    toast(`Backend initialization failed: ${err.message}`, true);
+  }
+}
+
+function renderClassSelect() {
+  const select = $('classSelect');
+  select.innerHTML = state.classes.map(c => `
+    <option value="${c.id}" ${c.id === state.currentClassId ? 'selected' : ''}>
+      ${c.name}
+    </option>
+  `).join('');
+}
+
+// ------------------------------------------
+// TEACHER DASHBOARD LOGIC
+// ------------------------------------------
+async function loadClassAttendance() {
+  try {
+    const res = await fetchAPI(`/attendance?classId=${state.currentClassId}&date=${state.currentDate}`);
+    state.currentAttendanceRows = res.data.students;
+
+    // Synchronize local mark state
+    state.marksState = {};
+    for (const s of state.currentAttendanceRows) {
+      if (s.attendanceStatus) {
+        state.marksState[s.roll] = s.attendanceStatus;
+      }
+    }
+
+    renderAttendanceTable();
+    updateMarkCounts();
+    $('lastSavedIndicator').textContent = 'Synced with database';
+    $('lastSavedIndicator').style.color = 'var(--muted)';
+  } catch (err) {
+    toast(`Failed to load attendance: ${err.message}`, true);
+  }
+}
+
+async function loadDashboardSummary() {
+  try {
+    const res = await fetchAPI(`/analytics/dashboard?classId=${state.currentClassId}&date=${state.currentDate}`);
+    const { metrics, alert, class: classInfo } = res.data;
+
+    $('totalStudents').textContent = metrics.totalStudents;
+    $('classSubtitle').textContent = `Enrolled in ${classInfo ? classInfo.name : 'Selected Class'}`;
+    $('lowCount').textContent = metrics.lowCount;
+    $('classAverage').textContent = `${metrics.classAverage}%`;
+    $('classAverageBar').style.width = `${metrics.classAverage}%`;
+    $('lowBadge').textContent = `${metrics.lowCount} at risk`;
+
+    // Alert Box
+    $('alertBox').style.display = alert.hasAlert ? 'flex' : 'none';
+    $('alertText').textContent = alert.message;
+
+    // Low Attendance Sidebar List
+    const lowList = $('lowStudents');
+    if (alert.students && alert.students.length > 0) {
+      lowList.innerHTML = alert.students.map(s => `
+        <div>
+          <div class="mini-item">
+            <div class="student">
+              <span class="initial">${initials(s.name)}</span>
+              <div>
+                <div>${s.name}</div>
+                <small class="muted">${s.roll} · Needs ${s.requiredClassesToRecover} classes</small>
+              </div>
+            </div>
+            <strong style="color:var(--red)">${s.percentage}%</strong>
+          </div>
+          <div class="progress" style="margin:8px 0 0 44px">
+            <span class="lowbar" style="width:${s.percentage}%"></span>
+          </div>
+        </div>
+      `).join('');
+    } else {
+      lowList.innerHTML = '<div class="empty">No students are below the 75% threshold. Great work!</div>';
+    }
+  } catch (err) {
+    console.error('Failed to update summary metrics:', err);
+  }
+}
+
+function renderAttendanceTable() {
+  const tbody = $('attendanceRows');
+  if (state.currentAttendanceRows.length === 0) {
+    tbody.innerHTML = '<tr><td colspan="4" class="empty">No students enrolled in this class.</td></tr>';
+    return;
+  }
+
+  tbody.innerHTML = state.currentAttendanceRows.map((s, idx) => {
+    const currentMark = state.marksState[s.roll] || '';
+    const isPresent = currentMark === 'present';
+    const isAbsent = currentMark === 'absent';
+
+    return `
+      <tr>
+        <td>
+          <div class="student">
+            <span class="initial">${initials(s.name)}</span>
+            <div>
+              <div>${s.name}</div>
+              <small class="muted">${s.email || ''}</small>
+            </div>
+          </div>
+        </td>
+        <td class="muted" style="font-weight:600">${s.roll}</td>
+        <td>
+          <span class="badge ${s.statusBadge === 'good' ? 'good' : 'low'}">
+            ${s.percentage}%
+          </span>
+        </td>
+        <td>
+          <div class="attendance-actions">
+            <button class="mark ${isPresent ? 'active-present' : ''}" 
+                    data-roll="${s.roll}" 
+                    data-status="present">
+              ✓ Present
+            </button>
+            <button class="mark ${isAbsent ? 'active-absent' : ''}" 
+                    data-roll="${s.roll}" 
+                    data-status="absent">
+              ✕ Absent
+            </button>
+          </div>
+        </td>
+      </tr>
+    `;
+  }).join('');
+
+  // Attach button listeners
+  tbody.querySelectorAll('.mark').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const roll = btn.dataset.roll;
+      const status = btn.dataset.status;
+      // Toggle if already selected, or set
+      if (state.marksState[roll] === status) {
+        delete state.marksState[roll];
+      } else {
+        state.marksState[roll] = status;
+      }
+      renderAttendanceTable();
+      updateMarkCounts();
+      $('lastSavedIndicator').textContent = '⚠️ Unsaved changes pending';
+      $('lastSavedIndicator').style.color = 'var(--amber-dark)';
+    });
+  });
+}
+
+function updateMarkCounts() {
+  const marks = Object.values(state.marksState);
+  const present = marks.filter(m => m === 'present').length;
+  const absent = marks.filter(m => m === 'absent').length;
+  $('presentCount').textContent = present;
+  $('absentCount').textContent = absent;
+}
+
+// ------------------------------------------
+// SAVE ATTENDANCE TO REST BACKEND
+// ------------------------------------------
+async function saveAttendance() {
+  const rolls = Object.keys(state.marksState);
+  if (rolls.length === 0) {
+    toast('No attendance marks to save.', true);
+    return;
+  }
+
+  const records = rolls.map(roll => ({
+    roll,
+    status: state.marksState[roll]
+  }));
+
+  try {
+    const saveBtn = $('saveBtn');
+    saveBtn.disabled = true;
+    saveBtn.textContent = 'Saving...';
+
+    const res = await fetchAPI('/attendance/mark', {
+      method: 'POST',
+      body: JSON.stringify({
+        date: state.currentDate,
+        classId: state.currentClassId,
+        records
+      })
+    });
+
+    toast(`✅ Successfully saved attendance for ${res.data.count} students!`);
+    await loadClassAttendance();
+    await loadDashboardSummary();
+  } catch (err) {
+    toast(`Failed to save attendance: ${err.message}`, true);
+  } finally {
+    $('saveBtn').disabled = false;
+    $('saveBtn').textContent = '💾 Save attendance';
+  }
+}
+
+// ------------------------------------------
+// RESET ATTENDANCE FOR DATE
+// ------------------------------------------
+async function resetAttendance() {
+  if (!confirm(`Are you sure you want to reset all attendance marks for ${state.currentDate}?`)) {
+    return;
+  }
+
+  try {
+    await fetchAPI(`/attendance/reset?date=${state.currentDate}&classId=${state.currentClassId}`, {
+      method: 'DELETE'
+    });
+    state.marksState = {};
+    toast(`Attendance for ${state.currentDate} has been reset.`);
+    await loadClassAttendance();
+    await loadDashboardSummary();
+  } catch (err) {
+    toast(`Reset failed: ${err.message}`, true);
+  }
+}
+
+// ------------------------------------------
+// STUDENT DASHBOARD LOGIC
+// ------------------------------------------
+async function populateStudentSelector() {
+  const res = await fetchAPI(`/students?classId=${state.currentClassId}`);
+  state.students = res.data;
+  const select = $('studentSelect');
+  select.innerHTML = state.students.map(s => `
+    <option value="${s.roll}" ${s.roll === state.currentStudentRoll ? 'selected' : ''}>
+      ${s.name} (${s.roll}) - ${s.percentage}%
+    </option>
+  `).join('');
+}
+
+async function loadStudentDashboard() {
+  try {
+    const res = await fetchAPI(`/attendance/student/${state.currentStudentRoll}`);
+    const { student, metrics, history } = res.data;
+
+    // Top KPI cards
+    $('myPercentage').textContent = `${metrics.percentage}%`;
+    $('myPercentage').style.color = metrics.isBelowThreshold ? 'var(--red)' : 'var(--ink)';
+    $('myPresent').textContent = metrics.presentDays;
+    $('myAbsent').textContent = metrics.absentDays;
+    $('myWorking').textContent = metrics.workingDays;
+
+    // Student Hero
+    $('studentBigAvatar').textContent = initials(student.name);
+    $('studentHeroName').textContent = student.name;
+    $('studentHeroSub').textContent = `Student · B.Tech CSE AI · Semester 1 · Roll no. ${student.roll}`;
+
+    // Progress Bar
+    $('myPercentLabel').textContent = `${metrics.percentage}%`;
+    const bar = $('myBar');
+    bar.style.width = `${metrics.percentage}%`;
+    bar.classList.toggle('lowbar', metrics.isBelowThreshold);
+
+    // Status Badge & Advice
+    const statusPill = $('myStatus');
+    const adviceBox = $('studentAdviceBox');
+    const adviceText = $('studentAdviceText');
+
+    if (metrics.isBelowThreshold) {
+      statusPill.textContent = 'Below required 75%';
+      statusPill.className = 'badge low';
+      adviceBox.className = 'advice-card warn';
+      adviceText.innerHTML = `<strong>Attention Required:</strong> Your attendance is currently at <strong>${metrics.percentage}%</strong>. You must attend the next <strong>${metrics.requiredClassesToRecover} consecutive classes</strong> without absence to reach the statutory 75% requirement.`;
+    } else {
+      statusPill.textContent = 'On track';
+      statusPill.className = 'badge good';
+      adviceBox.className = 'advice-card good';
+      const bufferMsg = metrics.allowedAbsencesBuffer > 0
+        ? `You can safely miss up to <strong>${metrics.allowedAbsencesBuffer} classes</strong> while remaining above the 75% threshold.`
+        : `You are exactly meeting requirements. Keep attending classes regularly!`;
+      adviceText.innerHTML = `<strong>Excellent Standing:</strong> Your attendance is healthy at <strong>${metrics.percentage}%</strong>. ${bufferMsg}`;
+    }
+
+    // Attendance History Table
+    $('totalHistoryCount').textContent = `${history.length} classes recorded`;
+    const tbody = $('studentHistory');
+    if (history.length === 0) {
+      tbody.innerHTML = '<tr><td colspan="4" class="empty">No attendance records found.</td></tr>';
+      return;
+    }
+
+    tbody.innerHTML = history.map(r => `
+      <tr>
+        <td style="font-weight:600">${r.date}</td>
+        <td>${r.course || 'Core Subject Lecture'}</td>
+        <td>
+          <span class="badge ${r.status === 'present' ? 'good' : 'low'}">
+            ${r.status === 'present' ? '✓ Present' : '✕ Absent'}
+          </span>
+        </td>
+        <td class="muted">${r.markedBy || 'Faculty'}</td>
+      </tr>
+    `).join('');
+  } catch (err) {
+    toast(`Failed to load student data: ${err.message}`, true);
+  }
+}
+
+// ------------------------------------------
+// EVENT LISTENERS
+// ------------------------------------------
+$('saveBtn').addEventListener('click', saveAttendance);
+$('resetBtn').addEventListener('click', resetAttendance);
+
+$('classSelect').addEventListener('change', async e => {
+  state.currentClassId = e.target.value;
+  await loadClassAttendance();
+  await loadDashboardSummary();
+  await populateStudentSelector();
+  if (state.currentRole === 'student') await loadStudentDashboard();
+});
+
+$('attendanceDate').addEventListener('change', async e => {
+  state.currentDate = e.target.value;
+  await loadClassAttendance();
+  await loadDashboardSummary();
+});
+
+$('roleSelect').addEventListener('change', async e => {
+  const isStudent = e.target.value === 'student';
+  state.currentRole = isStudent ? 'student' : 'teacher';
+
+  $('teacherView').classList.toggle('hidden', isStudent);
+  $('studentView').classList.toggle('hidden', !isStudent);
+
+  if (isStudent) {
+    $('pageTitle').textContent = 'Welcome back, Arunkumar';
+    $('pageSubtitle').textContent = 'Here is your official attendance record and academic progress.';
+    $('topAvatar').textContent = 'AC';
+    await loadStudentDashboard();
+  } else {
+    $('pageTitle').textContent = 'Good afternoon, Yash';
+    $('pageSubtitle').textContent = 'Manage your class attendance and keep track of student progress.';
+    $('topAvatar').textContent = 'YM';
+    await loadClassAttendance();
+    await loadDashboardSummary();
+  }
+});
+
+$('studentSelect').addEventListener('change', async e => {
+  state.currentStudentRoll = e.target.value;
+  await loadStudentDashboard();
+});
+
+$('markAllPresentBtn').addEventListener('click', () => {
+  state.currentAttendanceRows.forEach(s => {
+    state.marksState[s.roll] = 'present';
+  });
+  renderAttendanceTable();
+  updateMarkCounts();
+  $('lastSavedIndicator').textContent = '⚠️ Unsaved: All marked Present';
+  $('lastSavedIndicator').style.color = 'var(--amber-dark)';
+});
+
+$('markAllAbsentBtn').addEventListener('click', () => {
+  state.currentAttendanceRows.forEach(s => {
+    state.marksState[s.roll] = 'absent';
+  });
+  renderAttendanceTable();
+  updateMarkCounts();
+  $('lastSavedIndicator').textContent = '⚠️ Unsaved: All marked Absent';
+  $('lastSavedIndicator').style.color = 'var(--amber-dark)';
+});
+
+$('exportCsvBtn').addEventListener('click', () => {
+  window.location.href = `${API_BASE}/reports/csv?classId=${state.currentClassId}`;
+  toast('📥 Downloading class attendance CSV report...');
+});
+
+// Modal listeners
+$('coverPageBtn').addEventListener('click', () => $('coverModal').classList.remove('hidden'));
+$('closeCoverModal').addEventListener('click', () => $('coverModal').classList.add('hidden'));
+$('doneCoverModal').addEventListener('click', () => $('coverModal').classList.add('hidden'));
+$('coverModal').addEventListener('click', e => {
+  if (e.target === $('coverModal')) $('coverModal').classList.add('hidden');
+});
+
+// Boot app
+initApp();
+</script>
+</body>
+</html>

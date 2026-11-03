@@ -1,0 +1,25 @@
+{
+  "name": "attendease-backend",
+  "version": "1.0.0",
+  "description": "Production-grade Student Attendance System Backend with Real-Time Analytics & Reporting",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node tests/api.test.js",
+    "seed": "node src/scripts/seed.js"
+  },
+  "keywords": [
+    "attendance-system",
+    "student-portal",
+    "express",
+    "rest-api",
+    "analytics"
+  ],
+  "author": "Arunkumar Chaudhary <22CA001>",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  }
+}

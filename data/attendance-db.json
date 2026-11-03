@@ -1,0 +1,2753 @@
+{
+  "classes": [
+    {
+      "id": "cse-ai-sem1",
+      "name": "B.Tech CSE AI — Semester 1",
+      "code": "CSE-AI-S1",
+      "department": "Computer Science & AI",
+      "semester": "1st Semester",
+      "facultyGuide": "Yash More"
+    },
+    {
+      "id": "cse-sem1",
+      "name": "B.Tech CSE — Semester 1",
+      "code": "CSE-S1",
+      "department": "Computer Science & Engineering",
+      "semester": "1st Semester",
+      "facultyGuide": "Dr. Suresh Kumar"
+    }
+  ],
+  "students": [
+    {
+      "roll": "22CA001",
+      "name": "Arunkumar Chaudhary",
+      "email": "arunkumar.c@college.edu",
+      "classId": "cse-ai-sem1",
+      "semester": "1st Semester"
+    },
+    {
+      "roll": "22CA002",
+      "name": "Aarav Sharma",
+      "email": "aarav.s@college.edu",
+      "classId": "cse-ai-sem1",
+      "semester": "1st Semester"
+    },
+    {
+      "roll": "22CA003",
+      "name": "Ananya Singh",
+      "email": "ananya.s@college.edu",
+      "classId": "cse-ai-sem1",
+      "semester": "1st Semester"
+    },
+    {
+      "roll": "22CA004",
+      "name": "Diya Patel",
+      "email": "diya.p@college.edu",
+      "classId": "cse-ai-sem1",
+      "semester": "1st Semester"
+    },
+    {
+      "roll": "22CA005",
+      "name": "Ishaan Verma",
+      "email": "ishaan.v@college.edu",
+      "classId": "cse-ai-sem1",
+      "semester": "1st Semester"
+    },
+    {
+      "roll": "22CA006",
+      "name": "Kavya Mehta",
+      "email": "kavya.m@college.edu",
+      "classId": "cse-ai-sem1",
+      "semester": "1st Semester"
+    },
+    {
+      "roll": "22CA007",
+      "name": "Rohan Gupta",
+      "email": "rohan.g@college.edu",
+      "classId": "cse-ai-sem1",
+      "semester": "1st Semester"
+    },
+    {
+      "roll": "22CA008",
+      "name": "Sana Khan",
+      "email": "sana.k@college.edu",
+      "classId": "cse-ai-sem1",
+      "semester": "1st Semester"
+    },
+    {
+      "roll": "22CS001",
+      "name": "Aditya Rao",
+      "email": "aditya.r@college.edu",
+      "classId": "cse-sem1",
+      "semester": "1st Semester"
+    },
+    {
+      "roll": "22CS002",
+      "name": "Meera Nair",
+      "email": "meera.n@college.edu",
+      "classId": "cse-sem1",
+      "semester": "1st Semester"
+    },
+    {
+      "roll": "22CS003",
+      "name": "Rahul Deshmukh",
+      "email": "rahul.d@college.edu",
+      "classId": "cse-sem1",
+      "semester": "1st Semester"
+    },
+    {
+      "roll": "22CS004",
+      "name": "Sneha Reddy",
+      "email": "sneha.r@college.edu",
+      "classId": "cse-sem1",
+      "semester": "1st Semester"
+    }
+  ],
+  "attendanceRecords": [
+    {
+      "id": "att_1",
+      "roll": "22CA001",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-02",
+      "course": "Introduction to AI",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-02T10:00:00.000Z"
+    },
+    {
+      "id": "att_2",
+      "roll": "22CA002",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-02",
+      "course": "Introduction to AI",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-02T10:00:00.000Z"
+    },
+    {
+      "id": "att_3",
+      "roll": "22CA003",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-02",
+      "course": "Introduction to AI",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-02T10:00:00.000Z"
+    },
+    {
+      "id": "att_4",
+      "roll": "22CA004",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-02",
+      "course": "Introduction to AI",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-02T10:00:00.000Z"
+    },
+    {
+      "id": "att_5",
+      "roll": "22CA005",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-02",
+      "course": "Introduction to AI",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-02T10:00:00.000Z"
+    },
+    {
+      "id": "att_6",
+      "roll": "22CA006",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-02",
+      "course": "Introduction to AI",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-02T10:00:00.000Z"
+    },
+    {
+      "id": "att_7",
+      "roll": "22CA007",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-02",
+      "course": "Introduction to AI",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-02T10:00:00.000Z"
+    },
+    {
+      "id": "att_8",
+      "roll": "22CA008",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-02",
+      "course": "Introduction to AI",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-02T10:00:00.000Z"
+    },
+    {
+      "id": "att_9",
+      "roll": "22CS001",
+      "classId": "cse-sem1",
+      "date": "2026-10-02",
+      "course": "Introduction to AI",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-02T10:00:00.000Z"
+    },
+    {
+      "id": "att_10",
+      "roll": "22CS002",
+      "classId": "cse-sem1",
+      "date": "2026-10-02",
+      "course": "Introduction to AI",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-02T10:00:00.000Z"
+    },
+    {
+      "id": "att_11",
+      "roll": "22CS003",
+      "classId": "cse-sem1",
+      "date": "2026-10-02",
+      "course": "Introduction to AI",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-02T10:00:00.000Z"
+    },
+    {
+      "id": "att_12",
+      "roll": "22CS004",
+      "classId": "cse-sem1",
+      "date": "2026-10-02",
+      "course": "Introduction to AI",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-02T10:00:00.000Z"
+    },
+    {
+      "id": "att_13",
+      "roll": "22CA001",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-05",
+      "course": "Programming Fundamentals",
+      "status": "absent",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-05T10:00:00.000Z"
+    },
+    {
+      "id": "att_14",
+      "roll": "22CA002",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-05",
+      "course": "Programming Fundamentals",
+      "status": "absent",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-05T10:00:00.000Z"
+    },
+    {
+      "id": "att_15",
+      "roll": "22CA003",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-05",
+      "course": "Programming Fundamentals",
+      "status": "absent",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-05T10:00:00.000Z"
+    },
+    {
+      "id": "att_16",
+      "roll": "22CA004",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-05",
+      "course": "Programming Fundamentals",
+      "status": "absent",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-05T10:00:00.000Z"
+    },
+    {
+      "id": "att_17",
+      "roll": "22CA005",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-05",
+      "course": "Programming Fundamentals",
+      "status": "absent",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-05T10:00:00.000Z"
+    },
+    {
+      "id": "att_18",
+      "roll": "22CA006",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-05",
+      "course": "Programming Fundamentals",
+      "status": "absent",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-05T10:00:00.000Z"
+    },
+    {
+      "id": "att_19",
+      "roll": "22CA007",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-05",
+      "course": "Programming Fundamentals",
+      "status": "absent",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-05T10:00:00.000Z"
+    },
+    {
+      "id": "att_20",
+      "roll": "22CA008",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-05",
+      "course": "Programming Fundamentals",
+      "status": "absent",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-05T10:00:00.000Z"
+    },
+    {
+      "id": "att_21",
+      "roll": "22CS001",
+      "classId": "cse-sem1",
+      "date": "2026-10-05",
+      "course": "Programming Fundamentals",
+      "status": "absent",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-05T10:00:00.000Z"
+    },
+    {
+      "id": "att_22",
+      "roll": "22CS002",
+      "classId": "cse-sem1",
+      "date": "2026-10-05",
+      "course": "Programming Fundamentals",
+      "status": "absent",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-05T10:00:00.000Z"
+    },
+    {
+      "id": "att_23",
+      "roll": "22CS003",
+      "classId": "cse-sem1",
+      "date": "2026-10-05",
+      "course": "Programming Fundamentals",
+      "status": "absent",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-05T10:00:00.000Z"
+    },
+    {
+      "id": "att_24",
+      "roll": "22CS004",
+      "classId": "cse-sem1",
+      "date": "2026-10-05",
+      "course": "Programming Fundamentals",
+      "status": "absent",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-05T10:00:00.000Z"
+    },
+    {
+      "id": "att_25",
+      "roll": "22CA001",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-06",
+      "course": "Mathematics I",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-06T10:00:00.000Z"
+    },
+    {
+      "id": "att_26",
+      "roll": "22CA002",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-06",
+      "course": "Mathematics I",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-06T10:00:00.000Z"
+    },
+    {
+      "id": "att_27",
+      "roll": "22CA003",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-06",
+      "course": "Mathematics I",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-06T10:00:00.000Z"
+    },
+    {
+      "id": "att_28",
+      "roll": "22CA004",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-06",
+      "course": "Mathematics I",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-06T10:00:00.000Z"
+    },
+    {
+      "id": "att_29",
+      "roll": "22CA005",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-06",
+      "course": "Mathematics I",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-06T10:00:00.000Z"
+    },
+    {
+      "id": "att_30",
+      "roll": "22CA006",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-06",
+      "course": "Mathematics I",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-06T10:00:00.000Z"
+    },
+    {
+      "id": "att_31",
+      "roll": "22CA007",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-06",
+      "course": "Mathematics I",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-06T10:00:00.000Z"
+    },
+    {
+      "id": "att_32",
+      "roll": "22CA008",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-06",
+      "course": "Mathematics I",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-06T10:00:00.000Z"
+    },
+    {
+      "id": "att_33",
+      "roll": "22CS001",
+      "classId": "cse-sem1",
+      "date": "2026-10-06",
+      "course": "Mathematics I",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-06T10:00:00.000Z"
+    },
+    {
+      "id": "att_34",
+      "roll": "22CS002",
+      "classId": "cse-sem1",
+      "date": "2026-10-06",
+      "course": "Mathematics I",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-06T10:00:00.000Z"
+    },
+    {
+      "id": "att_35",
+      "roll": "22CS003",
+      "classId": "cse-sem1",
+      "date": "2026-10-06",
+      "course": "Mathematics I",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-06T10:00:00.000Z"
+    },
+    {
+      "id": "att_36",
+      "roll": "22CS004",
+      "classId": "cse-sem1",
+      "date": "2026-10-06",
+      "course": "Mathematics I",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-06T10:00:00.000Z"
+    },
+    {
+      "id": "att_37",
+      "roll": "22CA001",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-07",
+      "course": "Digital Electronics",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-07T10:00:00.000Z"
+    },
+    {
+      "id": "att_38",
+      "roll": "22CA002",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-07",
+      "course": "Digital Electronics",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-07T10:00:00.000Z"
+    },
+    {
+      "id": "att_39",
+      "roll": "22CA003",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-07",
+      "course": "Digital Electronics",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-07T10:00:00.000Z"
+    },
+    {
+      "id": "att_40",
+      "roll": "22CA004",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-07",
+      "course": "Digital Electronics",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-07T10:00:00.000Z"
+    },
+    {
+      "id": "att_41",
+      "roll": "22CA005",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-07",
+      "course": "Digital Electronics",
+      "status": "absent",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-07T10:00:00.000Z"
+    },
+    {
+      "id": "att_42",
+      "roll": "22CA006",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-07",
+      "course": "Digital Electronics",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-07T10:00:00.000Z"
+    },
+    {
+      "id": "att_43",
+      "roll": "22CA007",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-07",
+      "course": "Digital Electronics",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-07T10:00:00.000Z"
+    },
+    {
+      "id": "att_44",
+      "roll": "22CA008",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-07",
+      "course": "Digital Electronics",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-07T10:00:00.000Z"
+    },
+    {
+      "id": "att_45",
+      "roll": "22CS001",
+      "classId": "cse-sem1",
+      "date": "2026-10-07",
+      "course": "Digital Electronics",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-07T10:00:00.000Z"
+    },
+    {
+      "id": "att_46",
+      "roll": "22CS002",
+      "classId": "cse-sem1",
+      "date": "2026-10-07",
+      "course": "Digital Electronics",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-07T10:00:00.000Z"
+    },
+    {
+      "id": "att_47",
+      "roll": "22CS003",
+      "classId": "cse-sem1",
+      "date": "2026-10-07",
+      "course": "Digital Electronics",
+      "status": "absent",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-07T10:00:00.000Z"
+    },
+    {
+      "id": "att_48",
+      "roll": "22CS004",
+      "classId": "cse-sem1",
+      "date": "2026-10-07",
+      "course": "Digital Electronics",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-07T10:00:00.000Z"
+    },
+    {
+      "id": "att_49",
+      "roll": "22CA001",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-08",
+      "course": "Data Structures & Algorithms",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-08T10:00:00.000Z"
+    },
+    {
+      "id": "att_50",
+      "roll": "22CA002",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-08",
+      "course": "Data Structures & Algorithms",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-08T10:00:00.000Z"
+    },
+    {
+      "id": "att_51",
+      "roll": "22CA003",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-08",
+      "course": "Data Structures & Algorithms",
+      "status": "absent",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-08T10:00:00.000Z"
+    },
+    {
+      "id": "att_52",
+      "roll": "22CA004",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-08",
+      "course": "Data Structures & Algorithms",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-08T10:00:00.000Z"
+    },
+    {
+      "id": "att_53",
+      "roll": "22CA005",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-08",
+      "course": "Data Structures & Algorithms",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-08T10:00:00.000Z"
+    },
+    {
+      "id": "att_54",
+      "roll": "22CA006",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-08",
+      "course": "Data Structures & Algorithms",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-08T10:00:00.000Z"
+    },
+    {
+      "id": "att_55",
+      "roll": "22CA007",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-08",
+      "course": "Data Structures & Algorithms",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-08T10:00:00.000Z"
+    },
+    {
+      "id": "att_56",
+      "roll": "22CA008",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-08",
+      "course": "Data Structures & Algorithms",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-08T10:00:00.000Z"
+    },
+    {
+      "id": "att_57",
+      "roll": "22CS001",
+      "classId": "cse-sem1",
+      "date": "2026-10-08",
+      "course": "Data Structures & Algorithms",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-08T10:00:00.000Z"
+    },
+    {
+      "id": "att_58",
+      "roll": "22CS002",
+      "classId": "cse-sem1",
+      "date": "2026-10-08",
+      "course": "Data Structures & Algorithms",
+      "status": "absent",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-08T10:00:00.000Z"
+    },
+    {
+      "id": "att_59",
+      "roll": "22CS003",
+      "classId": "cse-sem1",
+      "date": "2026-10-08",
+      "course": "Data Structures & Algorithms",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-08T10:00:00.000Z"
+    },
+    {
+      "id": "att_60",
+      "roll": "22CS004",
+      "classId": "cse-sem1",
+      "date": "2026-10-08",
+      "course": "Data Structures & Algorithms",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-08T10:00:00.000Z"
+    },
+    {
+      "id": "att_61",
+      "roll": "22CA001",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-09",
+      "course": "Introduction to AI",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-09T10:00:00.000Z"
+    },
+    {
+      "id": "att_62",
+      "roll": "22CA002",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-09",
+      "course": "Introduction to AI",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-09T10:00:00.000Z"
+    },
+    {
+      "id": "att_63",
+      "roll": "22CA003",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-09",
+      "course": "Introduction to AI",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-09T10:00:00.000Z"
+    },
+    {
+      "id": "att_64",
+      "roll": "22CA004",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-09",
+      "course": "Introduction to AI",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-09T10:00:00.000Z"
+    },
+    {
+      "id": "att_65",
+      "roll": "22CA005",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-09",
+      "course": "Introduction to AI",
+      "status": "absent",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-09T10:00:00.000Z"
+    },
+    {
+      "id": "att_66",
+      "roll": "22CA006",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-09",
+      "course": "Introduction to AI",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-09T10:00:00.000Z"
+    },
+    {
+      "id": "att_67",
+      "roll": "22CA007",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-09",
+      "course": "Introduction to AI",
+      "status": "absent",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-09T10:00:00.000Z"
+    },
+    {
+      "id": "att_68",
+      "roll": "22CA008",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-09",
+      "course": "Introduction to AI",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-09T10:00:00.000Z"
+    },
+    {
+      "id": "att_69",
+      "roll": "22CS001",
+      "classId": "cse-sem1",
+      "date": "2026-10-09",
+      "course": "Introduction to AI",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-09T10:00:00.000Z"
+    },
+    {
+      "id": "att_70",
+      "roll": "22CS002",
+      "classId": "cse-sem1",
+      "date": "2026-10-09",
+      "course": "Introduction to AI",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-09T10:00:00.000Z"
+    },
+    {
+      "id": "att_71",
+      "roll": "22CS003",
+      "classId": "cse-sem1",
+      "date": "2026-10-09",
+      "course": "Introduction to AI",
+      "status": "absent",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-09T10:00:00.000Z"
+    },
+    {
+      "id": "att_72",
+      "roll": "22CS004",
+      "classId": "cse-sem1",
+      "date": "2026-10-09",
+      "course": "Introduction to AI",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-09T10:00:00.000Z"
+    },
+    {
+      "id": "att_73",
+      "roll": "22CA001",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-12",
+      "course": "Programming Fundamentals",
+      "status": "absent",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-12T10:00:00.000Z"
+    },
+    {
+      "id": "att_74",
+      "roll": "22CA002",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-12",
+      "course": "Programming Fundamentals",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-12T10:00:00.000Z"
+    },
+    {
+      "id": "att_75",
+      "roll": "22CA003",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-12",
+      "course": "Programming Fundamentals",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-12T10:00:00.000Z"
+    },
+    {
+      "id": "att_76",
+      "roll": "22CA004",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-12",
+      "course": "Programming Fundamentals",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-12T10:00:00.000Z"
+    },
+    {
+      "id": "att_77",
+      "roll": "22CA005",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-12",
+      "course": "Programming Fundamentals",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-12T10:00:00.000Z"
+    },
+    {
+      "id": "att_78",
+      "roll": "22CA006",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-12",
+      "course": "Programming Fundamentals",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-12T10:00:00.000Z"
+    },
+    {
+      "id": "att_79",
+      "roll": "22CA007",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-12",
+      "course": "Programming Fundamentals",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-12T10:00:00.000Z"
+    },
+    {
+      "id": "att_80",
+      "roll": "22CA008",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-12",
+      "course": "Programming Fundamentals",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-12T10:00:00.000Z"
+    },
+    {
+      "id": "att_81",
+      "roll": "22CS001",
+      "classId": "cse-sem1",
+      "date": "2026-10-12",
+      "course": "Programming Fundamentals",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-12T10:00:00.000Z"
+    },
+    {
+      "id": "att_82",
+      "roll": "22CS002",
+      "classId": "cse-sem1",
+      "date": "2026-10-12",
+      "course": "Programming Fundamentals",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-12T10:00:00.000Z"
+    },
+    {
+      "id": "att_83",
+      "roll": "22CS003",
+      "classId": "cse-sem1",
+      "date": "2026-10-12",
+      "course": "Programming Fundamentals",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-12T10:00:00.000Z"
+    },
+    {
+      "id": "att_84",
+      "roll": "22CS004",
+      "classId": "cse-sem1",
+      "date": "2026-10-12",
+      "course": "Programming Fundamentals",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-12T10:00:00.000Z"
+    },
+    {
+      "id": "att_85",
+      "roll": "22CA001",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-13",
+      "course": "Mathematics I",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-13T10:00:00.000Z"
+    },
+    {
+      "id": "att_86",
+      "roll": "22CA002",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-13",
+      "course": "Mathematics I",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-13T10:00:00.000Z"
+    },
+    {
+      "id": "att_87",
+      "roll": "22CA003",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-13",
+      "course": "Mathematics I",
+      "status": "absent",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-13T10:00:00.000Z"
+    },
+    {
+      "id": "att_88",
+      "roll": "22CA004",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-13",
+      "course": "Mathematics I",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-13T10:00:00.000Z"
+    },
+    {
+      "id": "att_89",
+      "roll": "22CA005",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-13",
+      "course": "Mathematics I",
+      "status": "absent",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-13T10:00:00.000Z"
+    },
+    {
+      "id": "att_90",
+      "roll": "22CA006",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-13",
+      "course": "Mathematics I",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-13T10:00:00.000Z"
+    },
+    {
+      "id": "att_91",
+      "roll": "22CA007",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-13",
+      "course": "Mathematics I",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-13T10:00:00.000Z"
+    },
+    {
+      "id": "att_92",
+      "roll": "22CA008",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-13",
+      "course": "Mathematics I",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-13T10:00:00.000Z"
+    },
+    {
+      "id": "att_93",
+      "roll": "22CS001",
+      "classId": "cse-sem1",
+      "date": "2026-10-13",
+      "course": "Mathematics I",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-13T10:00:00.000Z"
+    },
+    {
+      "id": "att_94",
+      "roll": "22CS002",
+      "classId": "cse-sem1",
+      "date": "2026-10-13",
+      "course": "Mathematics I",
+      "status": "absent",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-13T10:00:00.000Z"
+    },
+    {
+      "id": "att_95",
+      "roll": "22CS003",
+      "classId": "cse-sem1",
+      "date": "2026-10-13",
+      "course": "Mathematics I",
+      "status": "absent",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-13T10:00:00.000Z"
+    },
+    {
+      "id": "att_96",
+      "roll": "22CS004",
+      "classId": "cse-sem1",
+      "date": "2026-10-13",
+      "course": "Mathematics I",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-13T10:00:00.000Z"
+    },
+    {
+      "id": "att_97",
+      "roll": "22CA001",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-14",
+      "course": "Digital Electronics",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-14T10:00:00.000Z"
+    },
+    {
+      "id": "att_98",
+      "roll": "22CA002",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-14",
+      "course": "Digital Electronics",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-14T10:00:00.000Z"
+    },
+    {
+      "id": "att_99",
+      "roll": "22CA003",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-14",
+      "course": "Digital Electronics",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-14T10:00:00.000Z"
+    },
+    {
+      "id": "att_100",
+      "roll": "22CA004",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-14",
+      "course": "Digital Electronics",
+      "status": "absent",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-14T10:00:00.000Z"
+    },
+    {
+      "id": "att_101",
+      "roll": "22CA005",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-14",
+      "course": "Digital Electronics",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-14T10:00:00.000Z"
+    },
+    {
+      "id": "att_102",
+      "roll": "22CA006",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-14",
+      "course": "Digital Electronics",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-14T10:00:00.000Z"
+    },
+    {
+      "id": "att_103",
+      "roll": "22CA007",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-14",
+      "course": "Digital Electronics",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-14T10:00:00.000Z"
+    },
+    {
+      "id": "att_104",
+      "roll": "22CA008",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-14",
+      "course": "Digital Electronics",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-14T10:00:00.000Z"
+    },
+    {
+      "id": "att_105",
+      "roll": "22CS001",
+      "classId": "cse-sem1",
+      "date": "2026-10-14",
+      "course": "Digital Electronics",
+      "status": "absent",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-14T10:00:00.000Z"
+    },
+    {
+      "id": "att_106",
+      "roll": "22CS002",
+      "classId": "cse-sem1",
+      "date": "2026-10-14",
+      "course": "Digital Electronics",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-14T10:00:00.000Z"
+    },
+    {
+      "id": "att_107",
+      "roll": "22CS003",
+      "classId": "cse-sem1",
+      "date": "2026-10-14",
+      "course": "Digital Electronics",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-14T10:00:00.000Z"
+    },
+    {
+      "id": "att_108",
+      "roll": "22CS004",
+      "classId": "cse-sem1",
+      "date": "2026-10-14",
+      "course": "Digital Electronics",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-14T10:00:00.000Z"
+    },
+    {
+      "id": "att_109",
+      "roll": "22CA001",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-15",
+      "course": "Data Structures & Algorithms",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-15T10:00:00.000Z"
+    },
+    {
+      "id": "att_110",
+      "roll": "22CA002",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-15",
+      "course": "Data Structures & Algorithms",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-15T10:00:00.000Z"
+    },
+    {
+      "id": "att_111",
+      "roll": "22CA003",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-15",
+      "course": "Data Structures & Algorithms",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-15T10:00:00.000Z"
+    },
+    {
+      "id": "att_112",
+      "roll": "22CA004",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-15",
+      "course": "Data Structures & Algorithms",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-15T10:00:00.000Z"
+    },
+    {
+      "id": "att_113",
+      "roll": "22CA005",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-15",
+      "course": "Data Structures & Algorithms",
+      "status": "absent",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-15T10:00:00.000Z"
+    },
+    {
+      "id": "att_114",
+      "roll": "22CA006",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-15",
+      "course": "Data Structures & Algorithms",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-15T10:00:00.000Z"
+    },
+    {
+      "id": "att_115",
+      "roll": "22CA007",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-15",
+      "course": "Data Structures & Algorithms",
+      "status": "absent",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-15T10:00:00.000Z"
+    },
+    {
+      "id": "att_116",
+      "roll": "22CA008",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-15",
+      "course": "Data Structures & Algorithms",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-15T10:00:00.000Z"
+    },
+    {
+      "id": "att_117",
+      "roll": "22CS001",
+      "classId": "cse-sem1",
+      "date": "2026-10-15",
+      "course": "Data Structures & Algorithms",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-15T10:00:00.000Z"
+    },
+    {
+      "id": "att_118",
+      "roll": "22CS002",
+      "classId": "cse-sem1",
+      "date": "2026-10-15",
+      "course": "Data Structures & Algorithms",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-15T10:00:00.000Z"
+    },
+    {
+      "id": "att_119",
+      "roll": "22CS003",
+      "classId": "cse-sem1",
+      "date": "2026-10-15",
+      "course": "Data Structures & Algorithms",
+      "status": "absent",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-15T10:00:00.000Z"
+    },
+    {
+      "id": "att_120",
+      "roll": "22CS004",
+      "classId": "cse-sem1",
+      "date": "2026-10-15",
+      "course": "Data Structures & Algorithms",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-15T10:00:00.000Z"
+    },
+    {
+      "id": "att_121",
+      "roll": "22CA001",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-16",
+      "course": "Introduction to AI",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-16T10:00:00.000Z"
+    },
+    {
+      "id": "att_122",
+      "roll": "22CA002",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-16",
+      "course": "Introduction to AI",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-16T10:00:00.000Z"
+    },
+    {
+      "id": "att_123",
+      "roll": "22CA003",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-16",
+      "course": "Introduction to AI",
+      "status": "absent",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-16T10:00:00.000Z"
+    },
+    {
+      "id": "att_124",
+      "roll": "22CA004",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-16",
+      "course": "Introduction to AI",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-16T10:00:00.000Z"
+    },
+    {
+      "id": "att_125",
+      "roll": "22CA005",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-16",
+      "course": "Introduction to AI",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-16T10:00:00.000Z"
+    },
+    {
+      "id": "att_126",
+      "roll": "22CA006",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-16",
+      "course": "Introduction to AI",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-16T10:00:00.000Z"
+    },
+    {
+      "id": "att_127",
+      "roll": "22CA007",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-16",
+      "course": "Introduction to AI",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-16T10:00:00.000Z"
+    },
+    {
+      "id": "att_128",
+      "roll": "22CA008",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-16",
+      "course": "Introduction to AI",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-16T10:00:00.000Z"
+    },
+    {
+      "id": "att_129",
+      "roll": "22CS001",
+      "classId": "cse-sem1",
+      "date": "2026-10-16",
+      "course": "Introduction to AI",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-16T10:00:00.000Z"
+    },
+    {
+      "id": "att_130",
+      "roll": "22CS002",
+      "classId": "cse-sem1",
+      "date": "2026-10-16",
+      "course": "Introduction to AI",
+      "status": "absent",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-16T10:00:00.000Z"
+    },
+    {
+      "id": "att_131",
+      "roll": "22CS003",
+      "classId": "cse-sem1",
+      "date": "2026-10-16",
+      "course": "Introduction to AI",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-16T10:00:00.000Z"
+    },
+    {
+      "id": "att_132",
+      "roll": "22CS004",
+      "classId": "cse-sem1",
+      "date": "2026-10-16",
+      "course": "Introduction to AI",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-16T10:00:00.000Z"
+    },
+    {
+      "id": "att_133",
+      "roll": "22CA001",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-19",
+      "course": "Programming Fundamentals",
+      "status": "absent",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-19T10:00:00.000Z"
+    },
+    {
+      "id": "att_134",
+      "roll": "22CA002",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-19",
+      "course": "Programming Fundamentals",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-19T10:00:00.000Z"
+    },
+    {
+      "id": "att_135",
+      "roll": "22CA003",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-19",
+      "course": "Programming Fundamentals",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-19T10:00:00.000Z"
+    },
+    {
+      "id": "att_136",
+      "roll": "22CA004",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-19",
+      "course": "Programming Fundamentals",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-19T10:00:00.000Z"
+    },
+    {
+      "id": "att_137",
+      "roll": "22CA005",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-19",
+      "course": "Programming Fundamentals",
+      "status": "absent",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-19T10:00:00.000Z"
+    },
+    {
+      "id": "att_138",
+      "roll": "22CA006",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-19",
+      "course": "Programming Fundamentals",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-19T10:00:00.000Z"
+    },
+    {
+      "id": "att_139",
+      "roll": "22CA007",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-19",
+      "course": "Programming Fundamentals",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-19T10:00:00.000Z"
+    },
+    {
+      "id": "att_140",
+      "roll": "22CA008",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-19",
+      "course": "Programming Fundamentals",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-19T10:00:00.000Z"
+    },
+    {
+      "id": "att_141",
+      "roll": "22CS001",
+      "classId": "cse-sem1",
+      "date": "2026-10-19",
+      "course": "Programming Fundamentals",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-19T10:00:00.000Z"
+    },
+    {
+      "id": "att_142",
+      "roll": "22CS002",
+      "classId": "cse-sem1",
+      "date": "2026-10-19",
+      "course": "Programming Fundamentals",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-19T10:00:00.000Z"
+    },
+    {
+      "id": "att_143",
+      "roll": "22CS003",
+      "classId": "cse-sem1",
+      "date": "2026-10-19",
+      "course": "Programming Fundamentals",
+      "status": "absent",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-19T10:00:00.000Z"
+    },
+    {
+      "id": "att_144",
+      "roll": "22CS004",
+      "classId": "cse-sem1",
+      "date": "2026-10-19",
+      "course": "Programming Fundamentals",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-19T10:00:00.000Z"
+    },
+    {
+      "id": "att_145",
+      "roll": "22CA001",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-20",
+      "course": "Mathematics I",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-20T10:00:00.000Z"
+    },
+    {
+      "id": "att_146",
+      "roll": "22CA002",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-20",
+      "course": "Mathematics I",
+      "status": "absent",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-20T10:00:00.000Z"
+    },
+    {
+      "id": "att_147",
+      "roll": "22CA003",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-20",
+      "course": "Mathematics I",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-20T10:00:00.000Z"
+    },
+    {
+      "id": "att_148",
+      "roll": "22CA004",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-20",
+      "course": "Mathematics I",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-20T10:00:00.000Z"
+    },
+    {
+      "id": "att_149",
+      "roll": "22CA005",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-20",
+      "course": "Mathematics I",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-20T10:00:00.000Z"
+    },
+    {
+      "id": "att_150",
+      "roll": "22CA006",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-20",
+      "course": "Mathematics I",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-20T10:00:00.000Z"
+    },
+    {
+      "id": "att_151",
+      "roll": "22CA007",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-20",
+      "course": "Mathematics I",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-20T10:00:00.000Z"
+    },
+    {
+      "id": "att_152",
+      "roll": "22CA008",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-20",
+      "course": "Mathematics I",
+      "status": "absent",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-20T10:00:00.000Z"
+    },
+    {
+      "id": "att_153",
+      "roll": "22CS001",
+      "classId": "cse-sem1",
+      "date": "2026-10-20",
+      "course": "Mathematics I",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-20T10:00:00.000Z"
+    },
+    {
+      "id": "att_154",
+      "roll": "22CS002",
+      "classId": "cse-sem1",
+      "date": "2026-10-20",
+      "course": "Mathematics I",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-20T10:00:00.000Z"
+    },
+    {
+      "id": "att_155",
+      "roll": "22CS003",
+      "classId": "cse-sem1",
+      "date": "2026-10-20",
+      "course": "Mathematics I",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-20T10:00:00.000Z"
+    },
+    {
+      "id": "att_156",
+      "roll": "22CS004",
+      "classId": "cse-sem1",
+      "date": "2026-10-20",
+      "course": "Mathematics I",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-20T10:00:00.000Z"
+    },
+    {
+      "id": "att_157",
+      "roll": "22CA001",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-21",
+      "course": "Digital Electronics",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-21T10:00:00.000Z"
+    },
+    {
+      "id": "att_158",
+      "roll": "22CA002",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-21",
+      "course": "Digital Electronics",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-21T10:00:00.000Z"
+    },
+    {
+      "id": "att_159",
+      "roll": "22CA003",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-21",
+      "course": "Digital Electronics",
+      "status": "absent",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-21T10:00:00.000Z"
+    },
+    {
+      "id": "att_160",
+      "roll": "22CA004",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-21",
+      "course": "Digital Electronics",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-21T10:00:00.000Z"
+    },
+    {
+      "id": "att_161",
+      "roll": "22CA005",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-21",
+      "course": "Digital Electronics",
+      "status": "absent",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-21T10:00:00.000Z"
+    },
+    {
+      "id": "att_162",
+      "roll": "22CA006",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-21",
+      "course": "Digital Electronics",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-21T10:00:00.000Z"
+    },
+    {
+      "id": "att_163",
+      "roll": "22CA007",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-21",
+      "course": "Digital Electronics",
+      "status": "absent",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-21T10:00:00.000Z"
+    },
+    {
+      "id": "att_164",
+      "roll": "22CA008",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-21",
+      "course": "Digital Electronics",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-21T10:00:00.000Z"
+    },
+    {
+      "id": "att_165",
+      "roll": "22CS001",
+      "classId": "cse-sem1",
+      "date": "2026-10-21",
+      "course": "Digital Electronics",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-21T10:00:00.000Z"
+    },
+    {
+      "id": "att_166",
+      "roll": "22CS002",
+      "classId": "cse-sem1",
+      "date": "2026-10-21",
+      "course": "Digital Electronics",
+      "status": "absent",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-21T10:00:00.000Z"
+    },
+    {
+      "id": "att_167",
+      "roll": "22CS003",
+      "classId": "cse-sem1",
+      "date": "2026-10-21",
+      "course": "Digital Electronics",
+      "status": "absent",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-21T10:00:00.000Z"
+    },
+    {
+      "id": "att_168",
+      "roll": "22CS004",
+      "classId": "cse-sem1",
+      "date": "2026-10-21",
+      "course": "Digital Electronics",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-21T10:00:00.000Z"
+    },
+    {
+      "id": "att_169",
+      "roll": "22CA001",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-22",
+      "course": "Data Structures & Algorithms",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-22T10:00:00.000Z"
+    },
+    {
+      "id": "att_170",
+      "roll": "22CA002",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-22",
+      "course": "Data Structures & Algorithms",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-22T10:00:00.000Z"
+    },
+    {
+      "id": "att_171",
+      "roll": "22CA003",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-22",
+      "course": "Data Structures & Algorithms",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-22T10:00:00.000Z"
+    },
+    {
+      "id": "att_172",
+      "roll": "22CA004",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-22",
+      "course": "Data Structures & Algorithms",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-22T10:00:00.000Z"
+    },
+    {
+      "id": "att_173",
+      "roll": "22CA005",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-22",
+      "course": "Data Structures & Algorithms",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-22T10:00:00.000Z"
+    },
+    {
+      "id": "att_174",
+      "roll": "22CA006",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-22",
+      "course": "Data Structures & Algorithms",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-22T10:00:00.000Z"
+    },
+    {
+      "id": "att_175",
+      "roll": "22CA007",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-22",
+      "course": "Data Structures & Algorithms",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-22T10:00:00.000Z"
+    },
+    {
+      "id": "att_176",
+      "roll": "22CA008",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-22",
+      "course": "Data Structures & Algorithms",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-22T10:00:00.000Z"
+    },
+    {
+      "id": "att_177",
+      "roll": "22CS001",
+      "classId": "cse-sem1",
+      "date": "2026-10-22",
+      "course": "Data Structures & Algorithms",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-22T10:00:00.000Z"
+    },
+    {
+      "id": "att_178",
+      "roll": "22CS002",
+      "classId": "cse-sem1",
+      "date": "2026-10-22",
+      "course": "Data Structures & Algorithms",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-22T10:00:00.000Z"
+    },
+    {
+      "id": "att_179",
+      "roll": "22CS003",
+      "classId": "cse-sem1",
+      "date": "2026-10-22",
+      "course": "Data Structures & Algorithms",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-22T10:00:00.000Z"
+    },
+    {
+      "id": "att_180",
+      "roll": "22CS004",
+      "classId": "cse-sem1",
+      "date": "2026-10-22",
+      "course": "Data Structures & Algorithms",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-22T10:00:00.000Z"
+    },
+    {
+      "id": "att_181",
+      "roll": "22CA001",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-23",
+      "course": "Introduction to AI",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-23T10:00:00.000Z"
+    },
+    {
+      "id": "att_182",
+      "roll": "22CA002",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-23",
+      "course": "Introduction to AI",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-23T10:00:00.000Z"
+    },
+    {
+      "id": "att_183",
+      "roll": "22CA003",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-23",
+      "course": "Introduction to AI",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-23T10:00:00.000Z"
+    },
+    {
+      "id": "att_184",
+      "roll": "22CA004",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-23",
+      "course": "Introduction to AI",
+      "status": "absent",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-23T10:00:00.000Z"
+    },
+    {
+      "id": "att_185",
+      "roll": "22CA005",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-23",
+      "course": "Introduction to AI",
+      "status": "absent",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-23T10:00:00.000Z"
+    },
+    {
+      "id": "att_186",
+      "roll": "22CA006",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-23",
+      "course": "Introduction to AI",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-23T10:00:00.000Z"
+    },
+    {
+      "id": "att_187",
+      "roll": "22CA007",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-23",
+      "course": "Introduction to AI",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-23T10:00:00.000Z"
+    },
+    {
+      "id": "att_188",
+      "roll": "22CA008",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-23",
+      "course": "Introduction to AI",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-23T10:00:00.000Z"
+    },
+    {
+      "id": "att_189",
+      "roll": "22CS001",
+      "classId": "cse-sem1",
+      "date": "2026-10-23",
+      "course": "Introduction to AI",
+      "status": "absent",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-23T10:00:00.000Z"
+    },
+    {
+      "id": "att_190",
+      "roll": "22CS002",
+      "classId": "cse-sem1",
+      "date": "2026-10-23",
+      "course": "Introduction to AI",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-23T10:00:00.000Z"
+    },
+    {
+      "id": "att_191",
+      "roll": "22CS003",
+      "classId": "cse-sem1",
+      "date": "2026-10-23",
+      "course": "Introduction to AI",
+      "status": "absent",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-23T10:00:00.000Z"
+    },
+    {
+      "id": "att_192",
+      "roll": "22CS004",
+      "classId": "cse-sem1",
+      "date": "2026-10-23",
+      "course": "Introduction to AI",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-23T10:00:00.000Z"
+    },
+    {
+      "id": "att_193",
+      "roll": "22CA001",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-26",
+      "course": "Programming Fundamentals",
+      "status": "absent",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-26T10:00:00.000Z"
+    },
+    {
+      "id": "att_194",
+      "roll": "22CA002",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-26",
+      "course": "Programming Fundamentals",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-26T10:00:00.000Z"
+    },
+    {
+      "id": "att_195",
+      "roll": "22CA003",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-26",
+      "course": "Programming Fundamentals",
+      "status": "absent",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-26T10:00:00.000Z"
+    },
+    {
+      "id": "att_196",
+      "roll": "22CA004",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-26",
+      "course": "Programming Fundamentals",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-26T10:00:00.000Z"
+    },
+    {
+      "id": "att_197",
+      "roll": "22CA005",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-26",
+      "course": "Programming Fundamentals",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-26T10:00:00.000Z"
+    },
+    {
+      "id": "att_198",
+      "roll": "22CA006",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-26",
+      "course": "Programming Fundamentals",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-26T10:00:00.000Z"
+    },
+    {
+      "id": "att_199",
+      "roll": "22CA007",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-26",
+      "course": "Programming Fundamentals",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-26T10:00:00.000Z"
+    },
+    {
+      "id": "att_200",
+      "roll": "22CA008",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-26",
+      "course": "Programming Fundamentals",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-26T10:00:00.000Z"
+    },
+    {
+      "id": "att_201",
+      "roll": "22CS001",
+      "classId": "cse-sem1",
+      "date": "2026-10-26",
+      "course": "Programming Fundamentals",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-26T10:00:00.000Z"
+    },
+    {
+      "id": "att_202",
+      "roll": "22CS002",
+      "classId": "cse-sem1",
+      "date": "2026-10-26",
+      "course": "Programming Fundamentals",
+      "status": "absent",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-26T10:00:00.000Z"
+    },
+    {
+      "id": "att_203",
+      "roll": "22CS003",
+      "classId": "cse-sem1",
+      "date": "2026-10-26",
+      "course": "Programming Fundamentals",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-26T10:00:00.000Z"
+    },
+    {
+      "id": "att_204",
+      "roll": "22CS004",
+      "classId": "cse-sem1",
+      "date": "2026-10-26",
+      "course": "Programming Fundamentals",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-26T10:00:00.000Z"
+    },
+    {
+      "id": "att_205",
+      "roll": "22CA001",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-27",
+      "course": "Mathematics I",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-27T10:00:00.000Z"
+    },
+    {
+      "id": "att_206",
+      "roll": "22CA002",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-27",
+      "course": "Mathematics I",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-27T10:00:00.000Z"
+    },
+    {
+      "id": "att_207",
+      "roll": "22CA003",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-27",
+      "course": "Mathematics I",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-27T10:00:00.000Z"
+    },
+    {
+      "id": "att_208",
+      "roll": "22CA004",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-27",
+      "course": "Mathematics I",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-27T10:00:00.000Z"
+    },
+    {
+      "id": "att_209",
+      "roll": "22CA005",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-27",
+      "course": "Mathematics I",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-27T10:00:00.000Z"
+    },
+    {
+      "id": "att_210",
+      "roll": "22CA006",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-27",
+      "course": "Mathematics I",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-27T10:00:00.000Z"
+    },
+    {
+      "id": "att_211",
+      "roll": "22CA007",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-27",
+      "course": "Mathematics I",
+      "status": "absent",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-27T10:00:00.000Z"
+    },
+    {
+      "id": "att_212",
+      "roll": "22CA008",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-27",
+      "course": "Mathematics I",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-27T10:00:00.000Z"
+    },
+    {
+      "id": "att_213",
+      "roll": "22CS001",
+      "classId": "cse-sem1",
+      "date": "2026-10-27",
+      "course": "Mathematics I",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-27T10:00:00.000Z"
+    },
+    {
+      "id": "att_214",
+      "roll": "22CS002",
+      "classId": "cse-sem1",
+      "date": "2026-10-27",
+      "course": "Mathematics I",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-27T10:00:00.000Z"
+    },
+    {
+      "id": "att_215",
+      "roll": "22CS003",
+      "classId": "cse-sem1",
+      "date": "2026-10-27",
+      "course": "Mathematics I",
+      "status": "absent",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-27T10:00:00.000Z"
+    },
+    {
+      "id": "att_216",
+      "roll": "22CS004",
+      "classId": "cse-sem1",
+      "date": "2026-10-27",
+      "course": "Mathematics I",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-27T10:00:00.000Z"
+    },
+    {
+      "id": "att_217",
+      "roll": "22CA001",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-28",
+      "course": "Digital Electronics",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-28T10:00:00.000Z"
+    },
+    {
+      "id": "att_218",
+      "roll": "22CA002",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-28",
+      "course": "Digital Electronics",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-28T10:00:00.000Z"
+    },
+    {
+      "id": "att_219",
+      "roll": "22CA003",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-28",
+      "course": "Digital Electronics",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-28T10:00:00.000Z"
+    },
+    {
+      "id": "att_220",
+      "roll": "22CA004",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-28",
+      "course": "Digital Electronics",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-28T10:00:00.000Z"
+    },
+    {
+      "id": "att_221",
+      "roll": "22CA005",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-28",
+      "course": "Digital Electronics",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-28T10:00:00.000Z"
+    },
+    {
+      "id": "att_222",
+      "roll": "22CA006",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-28",
+      "course": "Digital Electronics",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-28T10:00:00.000Z"
+    },
+    {
+      "id": "att_223",
+      "roll": "22CA007",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-28",
+      "course": "Digital Electronics",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-28T10:00:00.000Z"
+    },
+    {
+      "id": "att_224",
+      "roll": "22CA008",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-28",
+      "course": "Digital Electronics",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-28T10:00:00.000Z"
+    },
+    {
+      "id": "att_225",
+      "roll": "22CS001",
+      "classId": "cse-sem1",
+      "date": "2026-10-28",
+      "course": "Digital Electronics",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-28T10:00:00.000Z"
+    },
+    {
+      "id": "att_226",
+      "roll": "22CS002",
+      "classId": "cse-sem1",
+      "date": "2026-10-28",
+      "course": "Digital Electronics",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-28T10:00:00.000Z"
+    },
+    {
+      "id": "att_227",
+      "roll": "22CS003",
+      "classId": "cse-sem1",
+      "date": "2026-10-28",
+      "course": "Digital Electronics",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-28T10:00:00.000Z"
+    },
+    {
+      "id": "att_228",
+      "roll": "22CS004",
+      "classId": "cse-sem1",
+      "date": "2026-10-28",
+      "course": "Digital Electronics",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-28T10:00:00.000Z"
+    },
+    {
+      "id": "att_229",
+      "roll": "22CA001",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-29",
+      "course": "Data Structures & Algorithms",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-29T10:00:00.000Z"
+    },
+    {
+      "id": "att_230",
+      "roll": "22CA002",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-29",
+      "course": "Data Structures & Algorithms",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-29T10:00:00.000Z"
+    },
+    {
+      "id": "att_231",
+      "roll": "22CA003",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-29",
+      "course": "Data Structures & Algorithms",
+      "status": "absent",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-29T10:00:00.000Z"
+    },
+    {
+      "id": "att_232",
+      "roll": "22CA004",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-29",
+      "course": "Data Structures & Algorithms",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-29T10:00:00.000Z"
+    },
+    {
+      "id": "att_233",
+      "roll": "22CA005",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-29",
+      "course": "Data Structures & Algorithms",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-29T10:00:00.000Z"
+    },
+    {
+      "id": "att_234",
+      "roll": "22CA006",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-29",
+      "course": "Data Structures & Algorithms",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-29T10:00:00.000Z"
+    },
+    {
+      "id": "att_235",
+      "roll": "22CA007",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-29",
+      "course": "Data Structures & Algorithms",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-29T10:00:00.000Z"
+    },
+    {
+      "id": "att_236",
+      "roll": "22CA008",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-29",
+      "course": "Data Structures & Algorithms",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-29T10:00:00.000Z"
+    },
+    {
+      "id": "att_237",
+      "roll": "22CS001",
+      "classId": "cse-sem1",
+      "date": "2026-10-29",
+      "course": "Data Structures & Algorithms",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-29T10:00:00.000Z"
+    },
+    {
+      "id": "att_238",
+      "roll": "22CS002",
+      "classId": "cse-sem1",
+      "date": "2026-10-29",
+      "course": "Data Structures & Algorithms",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-29T10:00:00.000Z"
+    },
+    {
+      "id": "att_239",
+      "roll": "22CS003",
+      "classId": "cse-sem1",
+      "date": "2026-10-29",
+      "course": "Data Structures & Algorithms",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-29T10:00:00.000Z"
+    },
+    {
+      "id": "att_240",
+      "roll": "22CS004",
+      "classId": "cse-sem1",
+      "date": "2026-10-29",
+      "course": "Data Structures & Algorithms",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-29T10:00:00.000Z"
+    },
+    {
+      "id": "att_241",
+      "roll": "22CA001",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-30",
+      "course": "Introduction to AI",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-30T10:00:00.000Z"
+    },
+    {
+      "id": "att_242",
+      "roll": "22CA002",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-30",
+      "course": "Introduction to AI",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-30T10:00:00.000Z"
+    },
+    {
+      "id": "att_243",
+      "roll": "22CA003",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-30",
+      "course": "Introduction to AI",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-30T10:00:00.000Z"
+    },
+    {
+      "id": "att_244",
+      "roll": "22CA004",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-30",
+      "course": "Introduction to AI",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-30T10:00:00.000Z"
+    },
+    {
+      "id": "att_245",
+      "roll": "22CA005",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-30",
+      "course": "Introduction to AI",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-30T10:00:00.000Z"
+    },
+    {
+      "id": "att_246",
+      "roll": "22CA006",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-30",
+      "course": "Introduction to AI",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-30T10:00:00.000Z"
+    },
+    {
+      "id": "att_247",
+      "roll": "22CA007",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-30",
+      "course": "Introduction to AI",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-30T10:00:00.000Z"
+    },
+    {
+      "id": "att_248",
+      "roll": "22CA008",
+      "classId": "cse-ai-sem1",
+      "date": "2026-10-30",
+      "course": "Introduction to AI",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-30T10:00:00.000Z"
+    },
+    {
+      "id": "att_249",
+      "roll": "22CS001",
+      "classId": "cse-sem1",
+      "date": "2026-10-30",
+      "course": "Introduction to AI",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-30T10:00:00.000Z"
+    },
+    {
+      "id": "att_250",
+      "roll": "22CS002",
+      "classId": "cse-sem1",
+      "date": "2026-10-30",
+      "course": "Introduction to AI",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-30T10:00:00.000Z"
+    },
+    {
+      "id": "att_251",
+      "roll": "22CS003",
+      "classId": "cse-sem1",
+      "date": "2026-10-30",
+      "course": "Introduction to AI",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-30T10:00:00.000Z"
+    },
+    {
+      "id": "att_252",
+      "roll": "22CS004",
+      "classId": "cse-sem1",
+      "date": "2026-10-30",
+      "course": "Introduction to AI",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-10-30T10:00:00.000Z"
+    },
+    {
+      "id": "att_253",
+      "roll": "22CA001",
+      "classId": "cse-ai-sem1",
+      "date": "2026-11-02",
+      "course": "Programming Fundamentals",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-11-02T10:00:00.000Z"
+    },
+    {
+      "id": "att_254",
+      "roll": "22CA002",
+      "classId": "cse-ai-sem1",
+      "date": "2026-11-02",
+      "course": "Programming Fundamentals",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-11-02T10:00:00.000Z"
+    },
+    {
+      "id": "att_255",
+      "roll": "22CA003",
+      "classId": "cse-ai-sem1",
+      "date": "2026-11-02",
+      "course": "Programming Fundamentals",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-11-02T10:00:00.000Z"
+    },
+    {
+      "id": "att_256",
+      "roll": "22CA004",
+      "classId": "cse-ai-sem1",
+      "date": "2026-11-02",
+      "course": "Programming Fundamentals",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-11-02T10:00:00.000Z"
+    },
+    {
+      "id": "att_257",
+      "roll": "22CA005",
+      "classId": "cse-ai-sem1",
+      "date": "2026-11-02",
+      "course": "Programming Fundamentals",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-11-02T10:00:00.000Z"
+    },
+    {
+      "id": "att_258",
+      "roll": "22CA006",
+      "classId": "cse-ai-sem1",
+      "date": "2026-11-02",
+      "course": "Programming Fundamentals",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-11-02T10:00:00.000Z"
+    },
+    {
+      "id": "att_259",
+      "roll": "22CA007",
+      "classId": "cse-ai-sem1",
+      "date": "2026-11-02",
+      "course": "Programming Fundamentals",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-11-02T10:00:00.000Z"
+    },
+    {
+      "id": "att_260",
+      "roll": "22CA008",
+      "classId": "cse-ai-sem1",
+      "date": "2026-11-02",
+      "course": "Programming Fundamentals",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-11-02T10:00:00.000Z"
+    },
+    {
+      "id": "att_261",
+      "roll": "22CS001",
+      "classId": "cse-sem1",
+      "date": "2026-11-02",
+      "course": "Programming Fundamentals",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-11-02T10:00:00.000Z"
+    },
+    {
+      "id": "att_262",
+      "roll": "22CS002",
+      "classId": "cse-sem1",
+      "date": "2026-11-02",
+      "course": "Programming Fundamentals",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-11-02T10:00:00.000Z"
+    },
+    {
+      "id": "att_263",
+      "roll": "22CS003",
+      "classId": "cse-sem1",
+      "date": "2026-11-02",
+      "course": "Programming Fundamentals",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-11-02T10:00:00.000Z"
+    },
+    {
+      "id": "att_264",
+      "roll": "22CS004",
+      "classId": "cse-sem1",
+      "date": "2026-11-02",
+      "course": "Programming Fundamentals",
+      "status": "present",
+      "markedBy": "Faculty Yash More",
+      "updatedAt": "2026-11-02T10:00:00.000Z"
+    }
+  ],
+  "meta": {
+    "initializedAt": "2026-11-03T16:20:13.428Z",
+    "version": "1.0.0",
+    "totalWorkingDays": 22
+  }
+}

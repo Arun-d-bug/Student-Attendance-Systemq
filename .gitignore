@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+
+# Local runtime portable binaries
+.runtime/
+
+# Environment and sensitive data
+.env
+.env.local
+.env.*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs/
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Test coverage
+coverage/
+
+# Temporary files
+tmp/
+temp/
